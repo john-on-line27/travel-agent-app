@@ -37,7 +37,7 @@ function App() {
     setResult(null)
     setFetchError(null)
     try {
-      const res = await fetch('http://localhost:8000/recommend', {
+      const res = await fetch('https://travel-agent-production-b572.up.railway.app/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
